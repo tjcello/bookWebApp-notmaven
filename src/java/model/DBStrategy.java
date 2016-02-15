@@ -14,4 +14,5 @@ public interface DBStrategy {
     public abstract void closeConnection() throws SQLException;
     public List<Map<String,Object>> findAllRecords(String tableName,
             int maxRecords) throws SQLException;
+    public int deleteRecordbyPrimaryKey(String tableName, String primaryKey, Object primaryKeyValue) throws SQLException;
 }
